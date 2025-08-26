@@ -6,6 +6,21 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
+        // CENA DE ABERTURA: BAIXANO E BONHOLE NA ACADEMIA
+        enunciado: "João Vitor (Baiano) resolve puxar papo com Ana Flávia (Bonhole) na academia, tentando dar em cima dela. Como Ana Flávia responde?",
+        alternativas: [
+            {
+                texto: "Ana Flávia sorri, mas responde que está focada no treino e não quer papo agora.",
+                afirmacao: "Ana Flávia se faz de difícil, dando um fora elegante, deixando João Vitor curioso e querendo tentar de novo."
+            },
+            {
+                texto: "Ana Flávia dá atenção e aceita o convite para um café após o treino.",
+                afirmacao: "Ana Flávia demonstra interesse e João Vitor sente que está no caminho certo para conquistar seu coração."
+            }
+        ]
+    },
+    // Suas perguntas originais aqui, começando a partir do índice 1
+    {
         enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
         alternativas: [
             {
