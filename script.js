@@ -4,6 +4,7 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
+
 const perguntas = [
     {
         enunciado: "João Vitor (Baiano) está na academia, focado no treino, mas com a cabeça cheia de pensamentos sobre Ana Flávia (Bonhole). Ele vê ela pela primeira vez. O que ele faz?",
