@@ -6,106 +6,93 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "João Vitor (Baiano) está na academia tentando puxar papo com Ana Flávia (Bonhole). Ele decide usar a nova tecnologia de chat de IA para descobrir o que falar com ela. Como o chat sugere?",
+        enunciado: "João Vitor (Baiano) está na academia, focado no treino, mas com a cabeça cheia de pensamentos sobre Ana Flávia (Bonhole). Ele vê ela pela primeira vez. O que ele faz?",
         alternativas: [
             {
-                texto: "O chat sugere que ele fale sobre treino e saúde, mas sem ser insistente.",
-                afirmacao: "João Vitor segue o conselho da IA e consegue um bom começo de conversa com Ana Flávia, mas ela se mostra focada no treino."
+                texto: "Baiano decide começar com uma conversa casual e se aproxima de Ana Flávia.",
+                afirmacao: "Baiano tenta puxar papo de forma tranquila, sem parecer desesperado. Ele está curioso, mas não quer forçar nada."
             },
             {
-                texto: "O chat sugere que ele a convide para um café depois do treino.",
-                afirmacao: "João Vitor tenta ser mais direto e convida Ana Flávia para um café, mas ela recusa educadamente, dizendo que está muito focada no treino."
+                texto: "Baiano tenta impressioná-la logo de cara com um elogio exagerado.",
+                afirmacao: "Ana Flávia não se impressiona com o elogio e Baiano percebe que talvez tenha exagerado no começo."
             }
         ]
     },
     {
-        enunciado: "Após o encontro, João Vitor decide usar a IA para entender como melhorar suas chances com Ana Flávia. Qual é o primeiro conselho que a IA dá?",
+        enunciado: "Após a primeira tentativa de conversa, Ana Flávia responde de maneira distante. O que Baiano faz para não desistir?",
         alternativas: [
             {
-                texto: "A IA sugere que ele foque em demonstrar suas habilidades e inteligência, ao invés de tentar ser engraçado.",
-                afirmacao: "João Vitor decide seguir o conselho da IA e começa a conversar com Ana Flávia sobre temas mais profundos e interessantes, como tecnologia e inovações."
+                texto: "Baiano finge que não se importa e foca no treino, esperando o momento certo para tentar de novo.",
+                afirmacao: "Ana Flávia nota a atitude de Baiano e, pela primeira vez, sente que ele é diferente dos outros caras."
             },
             {
-                texto: "A IA sugere que ele seja mais direto e expresse claramente seu interesse em ela.",
-                afirmacao: "João Vitor fica mais confiante ao seguir o conselho da IA e começa a ser mais claro sobre suas intenções. No entanto, Ana Flávia se mantém distante."
+                texto: "Baiano tenta fazer uma piada para quebrar o gelo.",
+                afirmacao: "Ana Flávia sorri, mas ainda mantém a postura distante. Baiano percebe que precisa de algo mais profundo."
             }
         ]
     },
     {
-        enunciado: "Depois de mais algumas tentativas, João Vitor decide pedir um conselho sobre como melhorar sua aproximação. A IA sugere ele fazer algo mais arriscado. O que a IA aconselha?",
+        enunciado: "Baiano começa a perceber que Ana Flávia tem um jeito misterioso e gosta de se fazer de difícil. Ele decide tentar algo mais ousado. O que ele faz?",
         alternativas: [
             {
-                texto: "A IA sugere que ele organize um evento de treino em grupo e a convide para ajudar na organização.",
-                afirmacao: "João Vitor segue o conselho da IA e organiza um evento na academia. Ana Flávia aceita o convite e eles acabam se aproximando."
+                texto: "Baiano se aproxima e a provoca de maneira leve, dizendo que ela parece estar sempre se esquivando.",
+                afirmacao: "Ana Flávia fica intrigada com a ousadia de Baiano e começa a pensar que ele realmente pode ser interessante."
             },
             {
-                texto: "A IA sugere que ele crie uma conversa descontraída sobre IA e como ela pode mudar a vida das pessoas.",
-                afirmacao: "João Vitor tenta a sugestão, mas Ana Flávia parece desinteressada, dizendo que prefere focar no treino e nas atividades pessoais."
+                texto: "Baiano tenta se fazer de difícil também, ignorando Ana Flávia por um tempo para ver se ela se interessa mais.",
+                afirmacao: "Ana Flávia, ao perceber que Baiano está agindo de forma diferente, decide tentar mais uma vez se aproximar."
             }
         ]
     },
     {
-        enunciado: "João Vitor começa a usar a IA para melhorar suas habilidades em outras áreas, como na escola. Ele decide pedir ajuda para um trabalho de biologia. O que a IA sugere para ele?",
+        enunciado: "Baiano e Ana Flávia têm um momento de interação mais intensa durante uma competição interna da academia. Como Baiano usa essa chance?",
         alternativas: [
             {
-                texto: "A IA sugere que ele use seus conhecimentos e criatividade, ajudando a entender o conteúdo de forma mais profunda e prática.",
-                afirmacao: "João Vitor segue o conselho da IA e consegue escrever um trabalho excelente, utilizando sua própria criatividade e as sugestões da IA."
+                texto: "Baiano se dedica ao máximo na competição para mostrar a sua força e dedicação.",
+                afirmacao: "Ana Flávia se impressiona com o desempenho de Baiano e começa a vê-lo de uma maneira diferente."
             },
             {
-                texto: "A IA sugere que ele copie partes de artigos científicos e coloque no trabalho para parecer mais profissional.",
-                afirmacao: "João Vitor tenta seguir a sugestão, mas logo percebe que o trabalho não tem sua própria identidade e decide refazer, utilizando a IA apenas para sugestões."
+                texto: "Baiano prefere não se destacar tanto e finge estar mais relaxado para não parecer arrogante.",
+                afirmacao: "Ana Flávia percebe a atitude de Baiano, mas sente que ele está tentando ser alguém que não é."
             }
         ]
     },
     {
-        enunciado: "Com o tempo, João Vitor percebe que a IA está se tornando cada vez mais útil para seu dia a dia, mas ele começa a questionar se está se tornando dependente dela. O que ele decide fazer?",
+        enunciado: "Depois da competição, Ana Flávia se aproxima de Baiano. Ela pergunta sobre seu desempenho, mas também o provoca. O que Baiano responde?",
         alternativas: [
             {
-                texto: "Ele decide parar de usar a IA por um tempo, focando mais em suas próprias ideias e habilidades.",
-                afirmacao: "João Vitor consegue sentir que sua criatividade e confiança aumentam ao não depender tanto da IA."
+                texto: "Baiano responde com confiança: 'Eu não costumo perder quando o prêmio é alguém tão difícil de conquistar.'",
+                afirmacao: "Ana Flávia, surpresa pela confiança de Baiano, começa a ver nele uma pessoa intrigante e decide se abrir mais."
             },
             {
-                texto: "Ele decide usar a IA para melhorar ainda mais suas habilidades, confiando nela para aprimorar todas as suas ações.",
-                afirmacao: "João Vitor sente que a IA o ajuda a se destacar em muitas áreas, mas começa a se questionar se isso está diminuindo sua autonomia."
+                texto: "Baiano responde de forma mais modesta: 'Eu só me dedico ao máximo, não busco competir com ninguém.'",
+                afirmacao: "Ana Flávia fica com a sensação de que Baiano é um cara mais tranquilo, mas que ainda tem muito a mostrar."
             }
         ]
     },
     {
-        enunciado: "João Vitor percebe que a IA pode ser uma ferramenta poderosa para o futuro do trabalho, mas ele começa a se preocupar com as pessoas que podem ser substituídas por máquinas. O que ele faz?",
+        enunciado: "Depois de várias interações, Baiano decide que é hora de ser direto com Ana Flávia. O que ele faz?",
         alternativas: [
             {
-                texto: "Ele começa a estudar sobre como a IA pode ser utilizada de forma ética e inclusiva para beneficiar todos.",
-                afirmacao: "João Vitor decide usar seus conhecimentos sobre IA para criar projetos que ajudem a integrar as pessoas ao mundo da tecnologia."
+                texto: "Baiano a convida para sair, dizendo que gostaria de conhecer melhor quem ela realmente é.",
+                afirmacao: "Ana Flávia, tocada pela sinceridade, aceita o convite e sente que talvez Baiano seja alguém mais interessante do que imaginava."
             },
             {
-                texto: "Ele decide ignorar as implicações éticas da IA e usa apenas para seu próprio benefício, sem se preocupar com os outros.",
-                afirmacao: "João Vitor começa a se distanciar da ética no uso da IA, o que o leva a perder sua conexão com os colegas."
+                texto: "Baiano decide não ser tão direto e, ao invés disso, faz um elogio indireto.",
+                afirmacao: "Ana Flávia percebe que Baiano ainda está jogando o jogo e decide testar mais um pouco sua paciência."
             }
         ]
     },
     {
-        enunciado: "João Vitor quer impressionar Ana Flávia, então decide usar a IA para criar algo incrível para ela. O que ele faz?",
+        enunciado: "Ana Flávia finalmente começa a ver Baiano como algo mais do que apenas um cara na academia. Como ela reage?",
         alternativas: [
             {
-                texto: "Ele usa a IA para criar uma obra de arte digital personalizada e envia para Ana Flávia.",
-                afirmacao: "Ana Flávia fica impressionada com a criatividade e a utilidade da IA, mas ainda mantém uma postura reservada."
+                texto: "Ela se aproxima e diz que está disposta a dar uma chance a ele, porque ele realmente a surpreendeu.",
+                afirmacao: "Baiano sorri, sabendo que finalmente conseguiu conquistar o coração de Ana Flávia, mas a jornada ainda não acabou."
             },
             {
-                texto: "Ele usa a IA para criar uma música romântica especialmente para ela.",
-                afirmacao: "Ana Flávia se encanta com a ideia, mas diz que prefere uma abordagem mais natural e pessoal, sem depender de tecnologia."
-            }
-        ]
-    },
-    {
-        enunciado: "Após todas as tentativas com a IA, João Vitor começa a refletir sobre o impacto que a tecnologia tem na sua vida e no relacionamento com Ana Flávia. O que ele pensa?",
-        alternativas: [
-            {
-                texto: "Ele percebe que a IA pode ser útil, mas que o verdadeiro valor está na interação humana e na autenticidade.",
-                afirmacao: "João Vitor decide que, embora a IA tenha suas vantagens, ele precisa ser mais verdadeiro e natural em seus relacionamentos."
-            },
-            {
-                texto: "Ele sente que a IA é a solução para todos os problemas, e decide confiar nela completamente em todas as áreas da vida.",
-                afirmacao: "João Vitor se torna cada vez mais dependente da IA, mas logo percebe que isso não substitui as experiências reais e pessoais."
+                texto: "Ela se mantém distante, dizendo que gosta dele, mas ainda precisa de mais tempo.",
+                afirmacao: "Baiano decide ser paciente, sabendo que conquistar Ana Flávia será um processo, mas ele está disposto a esperar."
             }
         ]
     },
@@ -143,7 +130,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "O desafio de Baiano e Ana Flávia está apenas começando...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
